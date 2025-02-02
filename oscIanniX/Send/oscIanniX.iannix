@@ -1,0 +1,314 @@
+/*
+ *	IanniX Score File
+ */
+
+
+/*
+ *	This method is called first.
+ *	It is the good section for asking user for script global variables (parameters).
+ *	
+ * 	This section is never overwritten by IanniX when saving.
+ */
+function askUserForParameters() {
+	//title("The title of the parameter box");
+	//ask("Group name of the parameter (only for display purposes)", "Parameter label", "myGlobalVar", "theDefaultValue");
+}
+
+
+/*
+ *	This method stores all the operations made through IanniX scripts.
+ *	You can add some commands here to make your own scripts!
+ *	Scripts are written in Javascript but even with a limited knowledge of Javascript, many types of useful scripts can be created.
+ *	
+ *	Beyond the standard javascript commands, the run() function is used to send commands to IanniX.
+ *	Commands must be provided to run() as a single string.
+ *	For example, run("zoom 100"); sets the display zoom to 100%.
+ *	
+ *	To combine numeric parameters with text commands to produce a string, use the concatenation operator.
+ *	In the following example center_x and center_y are in numeric variables and must be concatenated to the command string.
+ *	Example: run("setPos current " + center_x + " " + center_y + " 0");
+ *	
+ *	To learn IanniX commands, perform an manipulation in IanniX graphical user interface, and see the Helper window.
+ *	You'll see the syntax of the command-equivalent action.
+ *	
+ *	And finally, remember that most of commands must target an object.
+ *	Global syntax is always run("<command name> <target> <arguments>");
+ *	Targets can be an ID (number) or a Group ID (string name of group) (please see "Info" tab in Inspector panel).
+ *	Special targets are "current" (last used ID), "all" (all the objects) and "lastCurve" (last used curve).
+ *	
+ * 	This section is never overwritten by IanniX when saving.
+ */
+function makeWithScript() {
+    // Clear and setup viewport
+    run("clear");
+    run("rotate 0 0 0");
+    run("center 0 0 0");
+    run("zoom 210");
+
+    // Define parameters with random initial values
+    var param1 = Math.random() * 20 - 10;  // Random value between -10 and 10
+    var param2 = Math.random() * 20 - 10;  // Random value between -10 and 10
+    var param3 = Math.random() * 20 - 10;  // Random value between -10 and 10
+    var param4 = Math.random() * 20 - 10;  // Random value between -10 and 10
+    var param5 = Math.random() * 20 - 10;  // Random value between -10 and 10
+
+    // Create the curve and set the equations with geometric features
+    var id = 0;
+    run("add curve " + (1000 + id));
+    run("setPos current -10 7 0");
+
+    // Choose random geometry for the curve (for example, ball, cycloid, etc.)
+    var equationChoice = Math.floor(Math.random() * 8);  // Randomly choose one of 8 options
+
+    // Set different equations based on the random choice
+    if (equationChoice === 0) { // Sphere
+        run("setEquation current cartesian " +
+            "10 * cos(PI * t) * sin(PI * t), " +
+            "10 * sin(PI * t) * sin(PI * t), " +
+            "10 * cos(PI * t)"
+        );
+    } else if (equationChoice === 1) { // Archimedean Spiral
+        run("setEquation current cartesian " +
+            "(param1 + t) * cos(t), " +
+            "(param1 + t) * sin(t), " +
+            "t"
+        );
+    } else if (equationChoice === 2) { // Lissajous Curve
+        run("setEquation current cartesian " +
+            "param1 * sin(3 * PI * t), " +
+            "param2 * sin(2 * PI * t), " +
+            "0"
+        );
+    } else if (equationChoice === 3) { // Cycloid
+        run("setEquation current cartesian " +
+            "param1 * (t - sin(t)), " +
+            "param2 * (1 - cos(t)), " +
+            "0"
+        );
+    } else if (equationChoice === 4) { // Trochoid
+        run("setEquation current cartesian " +
+            "param1 * (t - sin(t)), " +
+            "param2 * (1 - cos(t)), " +
+            "param3 * t"
+        );
+    } else if (equationChoice === 5) { // Epicycloid
+        run("setEquation current cartesian " +
+            "(param1 + param2) * cos(t) - param2 * cos(((param1 + param2) / param2) * t), " +
+            "(param1 + param2) * sin(t) - param2 * sin(((param1 + param2) / param2) * t), " +
+            "0"
+        );
+    } else if (equationChoice === 6) { // Hypocycloid
+        run("setEquation current cartesian " +
+            "(param1 - param2) * cos(t) + param2 * cos(((param1 - param2) / param2) * t), " +
+            "(param1 - param2) * sin(t) - param2 * sin(((param1 - param2) / param2) * t), " +
+            "0"
+        );
+    } else { // Lemniscate of Bernoulli (a form of lemniscate)
+        run("setEquation current cartesian " +
+            "param1 * cos(t) / (1 + sin(t) * sin(t)), " +
+            "param2 * sin(t) * cos(t) / (1 + sin(t) * sin(t)), " +
+            "0"
+        );
+    }
+
+    // Set the equations parameters
+    run("setEquationParam current param1 " + param1);
+    run("setEquationParam current param2 " + param2);
+    run("setEquationParam current param3 " + param3);
+    run("setEquationParam current param4 " + param4);
+    run("setEquationParam current param5 " + param5);
+
+    // Add a cursor
+    run("add cursor " + id);
+    run("setCurve current lastCurve");
+    run("setSpeed current autolock 20");
+    run("setPattern current 0 0 1 -1");
+    run("setWidth current 1");
+    run("setDepth current 1");
+
+    // Add trigger
+    run("add trigger " + (2000 + id));
+    run("setPos current -8 7 0");
+
+    // Randomize position for the trigger and cursor
+    run("setPos current " + (Math.random() * 20 - 10) + " " + (Math.random() * 20 - 10) + " " + (Math.random() * 10 - 5));
+
+    // Increment the ID for the next object
+    id++;
+
+    // Add random triggers and cursors for different curves
+    for (var i = 0; i < 50; i++) {
+        run("add curve " + (1000 + id));
+        run("setPos current " + (Math.random() * 20 - 10) + " " + (Math.random() * 20 - 10) + " 0");
+        run("setEquation current cartesian " +
+            "2 * cos(t * PI * param / 5), sin(2 * t * 2*PI), 0"
+        );
+        run("setEquationParam current param 1");
+        run("add cursor " + id);
+        run("setCurve current lastCurve");
+        run("setSpeed current autolock 20");
+        run("setPattern current 0 0 1 -1");
+        run("setWidth current 1");
+        run("setDepth current 1");
+        run("setMessage current 20, direct:// setEquationParam " + (1000 + id + 1) + " param cursor_yPos");
+        run("add trigger " + (2000 + id));
+        run("setPos current " + (Math.random() * 20 - 10) + " " + (Math.random() * 20 - 10) + " 0");
+        id++;
+    }
+
+    // Function to dynamically change Width, Depth, Speed, and Master Speed
+    function updateCursorProperties() {
+        for (var j = 0; j < id; j++) {
+            // Randomly update Width and Depth between 5x and 15x the original size
+            var randomWidth = Math.random() * 10 + 5;
+            var randomDepth = Math.random() * 10 + 5;
+            run("setWidth curve " + (1000 + j) + " " + randomWidth);
+            run("setDepth curve " + (1000 + j) + " " + randomDepth);
+
+            // Randomly update Speed and Master Speed between -5 and 5
+            var randomSpeed = Math.random() * 10 - 5;
+            var randomMasterSpeed = Math.random() * 10 - 5;
+            run("setSpeed curve " + (1000 + j) + " " + randomSpeed);
+            run("setMessage current 20, direct:// setMasterSpeed " + (1000 + j) + " " + randomMasterSpeed);
+        }
+    }
+
+    // Function to update trigger position every 100ms
+    function updateTriggerPositions() {
+        for (var j = 0; j < id; j++) {
+            // Update trigger positions randomly
+            run("setPos trigger " + (2000 + j) + " " + (Math.random() * 20 - 10) + " " + (Math.random() * 20 - 10) + " " + (Math.random() * 10 - 5));
+        }
+    }
+
+    // Update parameters, cursor properties, and trigger positions dynamically every 100ms
+    setInterval(function () {
+        param1 = Math.random() * 20 - 10;
+        param2 = Math.random() * 20 - 10;
+        param3 = Math.random() * 20 - 10;
+        param4 = Math.random() * 20 - 10;
+        param5 = Math.random() * 20 - 10;
+
+        // Apply new random values to all curves and cursors
+        run("setEquationParam current param1 " + param1);
+        run("setEquationParam current param2 " + param2);
+        run("setEquationParam current param3 " + param3);
+        run("setEquationParam current param4 " + param4);
+        run("setEquationParam current param5 " + param5);
+
+        updateCursorProperties();
+        updateTriggerPositions();  // Update trigger positions every 100ms
+    }, 100);  // Update every 100ms for dynamic change during playback
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *	When an incoming message is received, this method is called.
+ *		- <protocol> tells information about the nature of message ("osc", "midi", "direct…)
+ *		- <host> and <port> gives the origin of message, specially for IP protocols (for OpenSoundControl, UDP or TCP, it is the IP and port of the application that sends the message)
+ *		- <destination> is the supposed destination of message (for OpenSoundControl it is the path, for MIDI it is Control Change or Note on/off…)
+ *		- <values> are an array of arguments contained in the message
+ *	
+ * 	This section is never overwritten by IanniX when saving.
+ */
+function onIncomingMessage(protocol, host, port, destination, values) {
+	//Logs a message in the console (open "Config" tab from Inspector panel and see "Message log")
+	console("Received on '" + protocol + "' (" + host + ":" + port + ") to '" + destination + "', " + values.length + " values : ");
+	
+	//Browses all the arguments and displays them in log window
+	for(var valueIndex = 0 ; valueIndex < values.length ; valueIndex++)
+		console("- arg " + valueIndex + " = " + values[valueIndex]);
+}
+
+
+/*
+ *	This method stores all the operations made through the graphical user interface.
+ *	You are not supposed to modify this section, but it can be useful to remove some stuff that you added accidentaly.
+ *	
+ * 	Be very careful! This section is automaticaly overwritten when saving a score.
+ */
+function madeThroughGUI() {
+//GUI: NEVER EVER REMOVE THIS LINE
+	run("zoom 244");
+	run("rotate 0 -6.50493 0.443649");
+	run("speed 1");
+
+
+	run("setsolo 0 0");
+
+
+
+
+//GUI: NEVER EVER REMOVE THIS LINE
+}
+
+
+/*
+ *	This method stores all the operations made by other softwares through one of the IanniX interfaces.
+ *	You are not supposed to modify this section, but it can be useful to remove some stuff that you or a third party software added accidentaly.
+ *	
+ * 	Be very careful! This section is automaticaly overwritten when saving a score.
+ */
+function madeThroughInterfaces() {
+//INTERFACES: NEVER EVER REMOVE THIS LINE
+	run("setequationparam 2050 param5 0.5");
+
+
+
+//INTERFACES: NEVER EVER REMOVE THIS LINE
+}
+
+
+/*
+ *	This method is called last.
+ *	It allows you to modify your hand-drawn score (made through graphical user interface).
+ *	
+ * 	This section is never overwritten by IanniX when saving.
+ */
+function alterateWithScript() {
+	
+}
+
+
+/*
+ *	//APP VERSION: NEVER EVER REMOVE THIS LINE
+ *	Made with IanniX 0.9.20
+ *	//APP VERSION: NEVER EVER REMOVE THIS LINE
+ */
+
+
+
+/*
+    This file is part of IanniX, a graphical real-time open-source sequencer for digital art
+    Copyright (C) 2010-2015 — IanniX Association
+
+    Project Manager: Thierry Coduys (http://www.le-hub.org)
+    Development:     Guillaume Jacquemin (https://www.buzzinglight.com)
+
+    This file was written by Guillaume Jacquemin.
+
+    IanniX is a free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
