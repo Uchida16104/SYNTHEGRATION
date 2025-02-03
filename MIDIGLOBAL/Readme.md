@@ -6,19 +6,19 @@ It can edit and playback existing scores, play and control sounds, and modulate 
 
 Receive midi transmission from outside and visualize it on video.
 
-![](/MIDIGLOBAL/ScreenCapture/hydra.png)
+![](https://uchida16104.github.io/SYNTHEGRATION//MIDIGLOBAL/ScreenCapture/hydra.png)
 
 * SonicPI.rb
 
 Receives external midi transmissions and modulates the sound for output.
 
-![](/MIDIGLOBAL/ScreenCapture/SonicPI.png)
+![](https://uchida16104.github.io/SYNTHEGRATION//MIDIGLOBAL/ScreenCapture/SonicPI.png)
 
 * Csound.csd
 
 Execute the program to play a sound by itself.
 
-![](/MIDIGLOBAL/ScreenCapture/Csound.png)
+![](https://uchida16104.github.io/SYNTHEGRATION//MIDIGLOBAL/ScreenCapture/Csound.png)
 
 * Csound.qml
 
@@ -28,12 +28,12 @@ Control file for Csound.csd.
 
 This is a fugue-format music file created in LilyPond.
 
-![](/MIDIGLOBAL/ScreenCapture/LilyPond.png)
+![](https://uchida16104.github.io/SYNTHEGRATION//MIDIGLOBAL/ScreenCapture/LilyPond.png)
 
-* LilyPond.midi
-* LilyPond.pdf
-* LilyPond.xml
-* LilyPond.mscz
+* [LilyPond.midi](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Input/LilyPond.midi)
+* [LilyPond.pdf](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Output/LilyPond.pdf)
+* [LilyPond.xml](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Output/LilyPond.xml)
+* [LilyPond.mscz](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Output/LilyPond.mscz)
 
 These file are exported from LilyPond.ly and can be opened in MuseScore.
 
@@ -72,24 +72,24 @@ MIDIGLOBAL
 * [C](https://releases.llvm.org/download.html)
 * [Ruby](https://www.ruby-lang.org/downloads/)
 2.
-* Open Frescobaldi application and run LilyPong.ly after editing the file.
+* Open Frescobaldi application and run [LilyPong.ly](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Input/LilyPond.ly) after editing the file.
 * You can export any file, and play or edit other music applications (ex. MuseScore). 
 * Click x button and close the application and files if you want to stop.
 3.
-* Open Csound.csd on CsoundQt or Other applications.
+* Open [Csound.csd](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/Csound.csd) on CsoundQt or Other applications.
 * Edit the content and run the file.
-* In the case that you want to control the file, run Csound.qml in addition.
+* In the case that you want to control the file, run [Csound.qml](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/Csound.qml) in addition.
 * Click x button and close the application
 and files if you want to stop.
 4.
-* Open files or applications capable of sending MIDI notes (ex. SuperCollider.sc).
+* Open files or applications capable of sending MIDI notes (ex. [SuperCollider.sc](https://uchida16104.github.io/SYNTHEGRATION/PDCollider/Send/SuperCollider.sc)).
 * Open [hydra](https://hydra.ojack.xyz) in your browser.
-* Open and run hydra.js on [hydra](https://hydra.ojack.xyz).
+* Open and run [hydra.js](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/hydra.js) on [hydra](https://hydra.ojack.xyz).
 * Click x button on your browser tab and SuperCollider if you want to stop.
 5.
 * Open files or applications capable of
-sending MIDI notes (ex. SuperCollider.sc).
-* Open and run SonicPI.rb on Sonic PI.
+sending MIDI notes (ex. [SuperCollider.sc](https://uchida16104.github.io/SYNTHEGRATION/PDCollider/Send/SuperCollider.sc)).
+* Open and run [SonicPI.rb](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/SonicPI.rb) on Sonic PI.
 * Click x button on each applications if you want to stop.
 
 
