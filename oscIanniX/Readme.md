@@ -44,7 +44,7 @@ oscIanniX
 * [IanniX](https://www.iannix.org/download-iannix/)
 * [osci-render](https://github.com/jameshball/osci-render/releases/)
 
-2. Execute PythonPackagesOn([Linux.sh](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/Receive/Install/PythonPackagesOnLinuX.sh) / [MacOS.sh](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/Receive/Install/PythonPackagesOnMacOS.sh) / [Windows.ps1](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/Receive/Install/PythonPackagesOnWindows.ps1)).
+2. Execute PythonPackagesOn([Linux.sh](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/Receive/Install/PythonPackagesOnLinuX.sh) / [MacOS.sh](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/Receive/Install/PythonPackagesOnMacOS.sh) / [Windows.ps1](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/Receive/Install/PythonPackegesOnWindows.ps1)).
 
 3. Edit [source.py](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/Receive/Convert/Via/source.py) and [Lua2Obj.py](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/Receive/Convert/Lua2Obj.py) to customize the formula and
 parameter parts to the python description format.
