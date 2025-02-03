@@ -1,9 +1,9 @@
 # Sonic Processing
 
-It's a visualization and image recording of pitch and volume transitions transmitted by Sonic PI via osc communication.
+It's a visualization and image recording of pitch and volume transitions transmitted by [Sonic PI](https://sonic-pi.net/) via osc communication.
 
-![](/SonicProcessing/ScreenCapture/Processing.png)
-![](/SonicProcessing/ScreenCapture/SonicPI.png)
+![](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing/ScreenCapture/Processing.png)
+![](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing/ScreenCapture/SonicPI.png)
 
 ## Directory Structure
 ```
@@ -33,12 +33,12 @@ SonicProcessing
 * [Java](https://www.java.com/download/)
 * [Sonic PI](https://sonic-pi.net/)
 * [Ruby](https://www.ruby-lang.org/)
-2. Open SonicProcessing.rb on SonicPI.
-3. Open the application stored in the folder with each OS (If it doesn't go well, Open SonicProcessing.pde).
-4. Run SonicProcessing.rb on SonicPI.
+2. Open [SonicProcessing.rb](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing/Send/SonicProcessing.rb) on [Sonic PI](https://sonic-pi.net/).
+3. Open [the application stored in the folder with each CPU / OS](https://github.com/Uchida16104/SYNTHEGRATION/releases/tag/SonicProcessing) (If it doesn't go well, Open [SonicProcessing.pde](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing/Receive/SonicProcessing.pde)).
+4. Run [SonicProcessing.rb](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing/Send/SonicProcessing.rb) on [Sonic PI](https://sonic-pi.net/).
 5. If it goes well, you can enjoy it!
-6. Click stop button if you stop recording on Sonic PI.
-7. Click x button if you stop recording on Processing.
+6. Click stop button if you stop recording on [Sonic PI](https://sonic-pi.net/).
+7. Click x button if you stop recording on [Processing](https://processing.org/).
 8. Then, it stops all processes.
 
 
