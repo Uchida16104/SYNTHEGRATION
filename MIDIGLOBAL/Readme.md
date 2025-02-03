@@ -2,29 +2,29 @@
 
 It can edit and playback existing scores, play and control sounds, and modulate images and sounds based on sounds sent from midi.
 
-* hydra.js
+* [hydra.js](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/hydra.js)
 
 Receive midi transmission from outside and visualize it on video.
 
 ![](https://uchida16104.github.io/SYNTHEGRATION//MIDIGLOBAL/ScreenCapture/hydra.png)
 
-* SonicPI.rb
+* [SonicPI.rb](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/SonicPI.rb)
 
 Receives external midi transmissions and modulates the sound for output.
 
 ![](https://uchida16104.github.io/SYNTHEGRATION//MIDIGLOBAL/ScreenCapture/SonicPI.png)
 
-* Csound.csd
+* [Csound.csd](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/Csound.csd)
 
 Execute the program to play a sound by itself.
 
 ![](https://uchida16104.github.io/SYNTHEGRATION//MIDIGLOBAL/ScreenCapture/Csound.png)
 
-* Csound.qml
+* [Csound.qml](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/Csound.qml)
 
 Control file for Csound.csd.
 
-* LilyPond.ly
+* [LilyPond.ly](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Input/LilyPond.ly)
 
 This is a fugue-format music file created in LilyPond.
 
