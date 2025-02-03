@@ -22,11 +22,11 @@ Execute the program to play a sound by itself.
 
 * [Csound.qml](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/Csound.qml)
 
-Control file for Csound.csd.
+Control file for [Csound.csd](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/Csound.csd).
 
 * [LilyPond.ly](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Input/LilyPond.ly)
 
-This is a fugue-format music file created in LilyPond.
+This is a fugue-format music file created in [LilyPond](https://lilypond.org/).
 
 ![](https://uchida16104.github.io/SYNTHEGRATION//MIDIGLOBAL/ScreenCapture/LilyPond.png)
 
@@ -35,7 +35,7 @@ This is a fugue-format music file created in LilyPond.
 * [LilyPond.xml](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Output/LilyPond.xml)
 * [LilyPond.mscz](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Output/LilyPond.mscz)
 
-These file are exported from LilyPond.ly and can be opened in MuseScore.
+These file are exported from [LilyPond.ly](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Input/LilyPond.ly) and can be opened in [MuseScore](https://musescore.org/).
 
 ## Directory Structure
 ```
@@ -74,7 +74,7 @@ MIDIGLOBAL
 
 2.
 * Open Frescobaldi application and run [LilyPong.ly](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Input/LilyPond.ly) after editing the file.
-* You can export any file, and play or edit other music applications (ex. MuseScore). 
+* You can export any file, and play or edit other music applications (ex. [MuseScore](https://musescore.org/)). 
 * Click x button and close the application and files if you want to stop.
   
 3.
@@ -88,12 +88,12 @@ and files if you want to stop.
 * Open files or applications capable of sending MIDI notes (ex. [SuperCollider.sc](https://uchida16104.github.io/SYNTHEGRATION/PDCollider/Send/SuperCollider.sc)).
 * Open [hydra](https://hydra.ojack.xyz) in your browser.
 * Open and run [hydra.js](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/hydra.js) on [hydra](https://hydra.ojack.xyz).
-* Click x button on your browser tab and SuperCollider if you want to stop.
+* Click x button on your browser tab and [SuperCollider](https://supercollider.github.io/) if you want to stop.
   
 5.
 * Open files or applications capable of
 sending MIDI notes (ex. [SuperCollider.sc](https://uchida16104.github.io/SYNTHEGRATION/PDCollider/Send/SuperCollider.sc)).
-* Open and run [SonicPI.rb](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/SonicPI.rb) on Sonic PI.
+* Open and run [SonicPI.rb](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/SonicPI.rb) on [Sonic PI](https://sonic-pi.net/).
 * Click x button on each applications if you want to stop.
 
 
