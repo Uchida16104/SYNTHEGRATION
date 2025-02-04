@@ -1,4 +1,4 @@
-# Sonic Processing
+# SonicProcessing
 
 It's a visualization and image recording of pitch and volume transitions transmitted by [Sonic PI](https://sonic-pi.net/) via osc communication.
 
