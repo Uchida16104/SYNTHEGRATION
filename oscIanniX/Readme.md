@@ -63,4 +63,18 @@ the Lua description format.
 9. Click x button if you stop performance or close each applications.
 
 
-Hirotoshi Uchida
+<div style="display: flex; justify-content: space-between; width: 100%;">
+<div id="gh-pages-content" style="display: none; line-height: 0.25;" align="left">
+  <p>Prev</p>
+  <p><a href="https://github.com/Uchida16104/SYNTHEGRATION/tree/main/SonicProcessing"> << SonicProcessing </a></p>
+  <p><a href="https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing"> << SonicProcessing </a></p>
+  </div>
+<div id="gh-pages-content" style="display: none; line-height: 0.25;" align="right">
+  <p>Next</p>
+  <p><a href="https://github.com/Uchida16104/SYNTHEGRATION/tree/main/"> SYNTHEGRATION >> </a></p>
+  <p><a href="https://uchida16104.github.io/SYNTHEGRATION/"> SYNTHEGRATION >> </a></p>
+</div>
+</div>
+
+
+by Hirotoshi Uchida
