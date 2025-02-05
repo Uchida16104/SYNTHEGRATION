@@ -49,4 +49,18 @@ SonicProcessing
 8. Then, it stops all processes.
 
 
+<div style="display: flex; justify-content: space-between; width: 100%;">
+<div id="gh-pages-content" style="display: none; line-height: 0.25;" align="left">
+  <p>Prev</p>
+  <p><a href="https://github.com/Uchida16104/SYNTHEGRATION/tree/main/PDCollider"> << PDCollider </a></p>
+  <p><a href="https://uchida16104.github.io/SYNTHEGRATION/PDCollider"> << PDCollider </a></p>
+  </div>
+<div id="gh-pages-content" style="display: none; line-height: 0.25;" align="right">
+  <p>Next</p>
+  <p><a href="https://github.com/Uchida16104/SYNTHEGRATION/tree/main/oscIanniX"> oscIanniX >> </a></p>
+  <p><a href="https://uchida16104.github.io/SYNTHEGRATION/oscIanniX"> oscIanniX >> </a></p>
+</div>
+</div>
+
+
 Hirotoshi Uchida
