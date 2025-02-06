@@ -102,6 +102,7 @@ MIDIGLOBAL
 <details>
 <summary>  
 </summary>
+    
 It's recommended to be installed
     
 * [LilyPond](https://lilypond.org/download.html)
@@ -169,7 +170,9 @@ sending MIDI notes (ex. [SuperCollider.sc](https://uchida16104.github.io/SYNTHEG
 
 <details>
 <summary>  
+    
 Please read Readme.md in each directory for details.
+
 </summary>
     
 | Detail | GitHub | GitHub Pages |
