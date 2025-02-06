@@ -96,17 +96,17 @@ sending MIDI notes (ex. [SuperCollider.sc](https://uchida16104.github.io/SYNTHEG
 * Open and run [SonicPI.rb](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL/Receive/SonicPI.rb) on [Sonic PI](https://sonic-pi.net/).
 * Click x button on each applications if you want to stop.
 
-<div style="display: flex; justify-content: space-between; width: 100%;">
-<div id="gh-pages-content" style="display: none; line-height: 0.25;" align="left">
-  <p>Prev</p>
-  <p><a href="https://github.com/Uchida16104/SYNTHEGRATION/tree/main/"> << SYNTHEGRATION </a></p>
-  <p><a href="https://uchida16104.github.io/SYNTHEGRATION/"> << SYNTHEGRATION </a></p>
-  </div>
-<div id="gh-pages-content" style="display: none; line-height: 0.25;" align="right">
-  <p>Next</p>
-  <p><a href="https://github.com/Uchida16104/SYNTHEGRATION/tree/main/PDCollider"> PDCollider >> </a></p>
-  <p><a href="https://uchida16104.github.io/SYNTHEGRATION/PDCollider"> PDCollider >> </a></p>
-</div>
-</div>
+## Reference
+Please read Readme.md in each directory for details.
+
+| Detail | GitHub | GitHub Pages |
+| :--- | :--- | :--- |
+| SYNTHEGRATION | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/) |
+| MIDIGLOBAL | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/MIDIGLOBAL) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/MIDIGLOBAL) |
+| PDCollider | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/PDCollider) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/PDCollider) |
+| SonicProcessing | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/SonicProcessing) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing) |
+| oscIanniX | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/oscIanniX) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX) |
+
+---
 
 by Hirotoshi Uchida
