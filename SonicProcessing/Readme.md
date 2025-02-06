@@ -2,10 +2,21 @@
 
 It's a visualization and image recording of pitch and volume transitions transmitted by [Sonic PI](https://sonic-pi.net/) via osc communication.
 
+<details>
+<summary>
+</summary>
+    
 ![](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing/ScreenCapture/Processing.png)
 ![](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing/ScreenCapture/SonicPI.png)
 
+</details>
+
 ## Directory Structure
+
+<details>
+<summary>
+</summary>
+
 ```
 SonicProcessing
 |-- Readme.md
@@ -27,7 +38,14 @@ SonicProcessing
 10 directories, 6 files
 ```
 
+</details>
+
 ## How to use
+
+<details>
+<summary>
+</summary>
+    
 1. It's recommended to be installed
 * [Processing](https://processing.org/download)
 * [Java](https://www.java.com/download/)
@@ -48,8 +66,16 @@ SonicProcessing
 
 8. Then, it stops all processes.
 
+</details>
+
 ## Reference
+
+<details>
+<summary>
+    
 Please read Readme.md in each directory for details.
+
+</summary>
 
 | Detail | GitHub | GitHub Pages |
 | :--- | :--- | :--- |
@@ -58,6 +84,8 @@ Please read Readme.md in each directory for details.
 | PDCollider | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/PDCollider/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/PDCollider) |
 | SonicProcessing | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/SonicProcessing/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing) |
 | oscIanniX | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/oscIanniX/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX) |
+
+</details>
 
 ---
 
