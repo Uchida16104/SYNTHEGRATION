@@ -1,10 +1,22 @@
 # oscIanniX
 
 By using pitch transitions sent from [IanniX](https://www.iannix.org/) via MIDI communication and modulating them with [osci-render](https://osci-render.com/), new sounds and melodies can be created in real time, and 3D object files can be modulated as synth instruments.
+
+<details>
+<summary>
+</summary>
+
 ![](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/ScreenCapture/osc-render.png)
 ![](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX/ScreenCapture/IanniX.png)
 
+</details>
+
 ## Directory Structure
+
+<details>
+<summary>
+</summary>
+
 ```
 oscIanniX
 |-- Readme.md
@@ -36,7 +48,14 @@ oscIanniX
 13 directories, 13 files
 ```
 
+</details>
+
 # How to use
+
+<details>
+<summary>
+</summary>
+
 1. It's recommended to be installed
 * [Java](https://www.java.com/download/)
 * [Python](https://www.python.org/downloads/)
@@ -62,8 +81,16 @@ the Lua description format.
 
 9. Click x button if you stop performance or close each applications.
 
+</details>
+
 ## Reference
+
+<details>
+<summary>
+
 Please read Readme.md in each directory for details.
+
+</summary>
 
 | Detail | GitHub | GitHub Pages |
 | :--- | :--- | :--- |
@@ -72,6 +99,8 @@ Please read Readme.md in each directory for details.
 | PDCollider | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/PDCollider/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/PDCollider) |
 | SonicProcessing | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/SonicProcessing/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing) |
 | oscIanniX | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/oscIanniX/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX) |
+
+</details>
 
 ---
 
