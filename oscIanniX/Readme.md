@@ -87,9 +87,7 @@ the Lua description format.
 
 <details>
 <summary>
-
-Please read Readme.md in each directory for details.
-
+    Please read Readme.md in each directory for details.
 </summary>
 
 | Detail | GitHub | GitHub Pages |
