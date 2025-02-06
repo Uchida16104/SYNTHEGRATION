@@ -2,10 +2,21 @@
 
 It modulates using pitch transitions sent via midi communication from [SuperCollider](https://supercollider.github.io/) to create new sounds in real time.
 
+<details>
+<summary>
+</summary>
+
 ![](https://uchida16104.github.io/SYNTHEGRATION/PDCollider/ScreenCapture/PureData.png)
 ![](https://uchida16104.github.io/SYNTHEGRATION/PDCollider/ScreenCapture/SuperCollider.png)
 
+</details>
+
 ## Directory Structure
+
+<details>
+<summary>
+</summary>
+
 ```
 PDCollider
 |-- Readme.md
@@ -20,7 +31,13 @@ PDCollider
 4 directories, 5 files
 ```
 
+</details>
+
 ## How to use
+<details>
+<summary>
+</summary>
+    
 1. It's recommended to be installed
 * [PureData](https://puredata.info/downloads)
 * [SuperCollider](https://supercollider.github.io/downloads.html)
@@ -37,8 +54,14 @@ PDCollider
 
 7. Then, it stops all processes.
 
+</details>
+
 ## Reference
+
+<details>
+<summary>
 Please read Readme.md in each directory for details.
+</summary>
 
 | Detail | GitHub | GitHub Pages |
 | :--- | :--- | :--- |
@@ -47,6 +70,8 @@ Please read Readme.md in each directory for details.
 | PDCollider | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/PDCollider/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/PDCollider) |
 | SonicProcessing | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/SonicProcessing/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/SonicProcessing) |
 | oscIanniX | [LINK](https://github.com/Uchida16104/SYNTHEGRATION/tree/main/oscIanniX/Readme.md) | [LINK](https://uchida16104.github.io/SYNTHEGRATION/oscIanniX) |
+
+</details>
 
 ---
 
